@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en-us">
+    <meta charset="UTF-8" />
+    <title>Problem-3</title>
+  </head>
+  <body>
+    <h5>See the console</h5>
+    <script>
+      function updateSalaries(employeesArray, percent) {
+        let newSalaries = [];
+        employeesArray.forEach((element) => {
+          let increment = element + (element * percent) / 100;
+          newSalaries.push(increment);
+        });
+        return newSalaries;
+      }
+      const employeesArray = [100, 500, 700, 400];
+      const percent = 10;
+      console.log(employeesArray);
+      console.log(percent);
+      console.log(updateSalaries(employeesArray, percent));
+    </script>
+  </body>
+</html>
